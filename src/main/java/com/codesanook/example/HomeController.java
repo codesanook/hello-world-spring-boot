@@ -13,6 +13,14 @@ public class HomeController {
     public String hello() {
         return "Hello World!";
     }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String test() {
+        return "Hello Test!";
+    }
+
+
     public static void main(String[] args) throws Exception {
         SpringApplication.run(HomeController.class, args);
     }
